@@ -1,0 +1,41 @@
+Source: libelf
+Section: devel
+Priority: optional
+Maintainer: Alex Pennace <alex@pennace.org>
+Build-Depends: gettext, debhelper (>= 4)
+Standards-Version: 3.6.2.2
+
+Package: libelfg0
+Architecture: any
+Section: libs
+Priority: optional
+Conflicts: libelf, libelf0 (<= 0.6.4-5)
+Depends: ${shlibs:Depends}
+Description: an ELF object file access library
+ libelf provides routines to access and manipulate ELF object
+ files. It is still not complete, but is required for a number of programs,
+ such as Eli (a state of the art compiler generation system), and Elk (the
+ Extension Language Kit - an implementation of the Scheme programming
+ language.)
+ .
+ This shared library may be needed by pre-packaged programs. To compile
+ programs with this library, you will need to install the libelfg0-dev
+ package as well.
+
+Package: libelfg0-dev
+Architecture: any
+Section: libdevel
+Priority: optional
+Depends: libelfg0 (= ${Source-Version}), libc6-dev
+Conflicts: libelf-dev, libelf0-dev, libelf1-dev
+Description: an ELF object file access library: development files
+ libelf provides routines to access and manipulate ELF object
+ files. It is still not complete, but is required for a number of programs,
+ such as Eli (a state of the art compiler generation system), and Elk (the
+ Extension Language Kit - an implementation of the Scheme programming
+ language.)
+ .
+ This development library is only needed if you intend to compile, or
+ write, your own programs with this library. It holds the static linking
+ library (.a), and the required .so link to libelf0.so.0. To run programs
+ linked with this library, install the libelfg0 package.

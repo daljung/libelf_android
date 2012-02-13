@@ -1,0 +1,4424 @@
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for x86_64-pc-linux-gnu
+making all in lib
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for x86_64-pc-linux-gnu
+# make[1]: Entering directory `/media/data/android_prj/libelf/libelf-0.8.13/lib'
+/home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc -shared -Wl,-soname,libelf.so.0 -o libelf.so.0.8.13 begin.os cntl.os end.os errmsg.os errno.os fill.os flag.os getarhdr.os getarsym.os getbase.os getdata.os getident.os getscn.os hash.os kind.os ndxscn.os newdata.os newscn.os next.os nextscn.os rand.os rawdata.os rawfile.os strptr.os update.os version.os checksum.os getaroff.os 32.fsize.os 32.getehdr.os 32.getphdr.os 32.getshdr.os 32.newehdr.os 32.newphdr.os 32.xlatetof.os cook.os data.os input.os assert.os nlist.os opt.delscn.os x.remscn.os x.movscn.os x.elfext.os 64.xlatetof.os gelfehdr.os gelfphdr.os gelfshdr.os gelftrans.os swap64.os verdef_32_tof.os verdef_32_tom.os verdef_64_tof.os verdef_64_tom.os  -lc
+/home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: crtbegin_so.o: No such file: No such file or directory
+collect2: ld returned 1 exit status
+make[1]: *** [libelf.so.0.8.13] Error 1
+
+# Make data base, printed on Fri Feb 10 15:27:33 2012
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = gnome-shell
+# environment
+LC_CTYPE = en_US.UTF-8
+# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 40)
+CPPFLAGS = --sysroot=/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm
+# makefile (from `Makefile', line 88)
+INCLUDES = -I$(topdir) -I. -I$(srcdir)
+# environment
+T32ID = T32
+# makefile (from `Makefile', line 41)
+DEFS = -DHAVE_CONFIG_H
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/indal.choi/.Xauthority
+# environment
+GDMSESSION = gnome-shell
+# environment
+XMODIFIERS = @im=nabi
+# makefile (from `Makefile', line 59)
+DO_COMPAT = yes
+# makefile
+CURDIR := /media/data/android_prj/libelf/libelf-0.8.13/lib
+# makefile (from `Makefile', line 69)
+SHELL = /bin/sh
+# makefile (from `Makefile', line 32)
+RM = rm -f
+# default
+CO = co
+# environment
+_ = /usr/bin/make
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# makefile (from `Makefile', line 54)
+SHLIB = libelf$(SHLIB_SFX)
+# makefile (from `Makefile', line 77)
+subdir = lib
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-gnome-shell:/etc/xdg
+# default
+OUTPUT_OPTION = -o $@
+# makefile (from `Makefile', line 135)
+HDRS = libelf.h nlist.h gelf.h
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 115)
+SRCS5 = opt.delscn.c x.remscn.c x.movscn.c x.elfext.c
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 22)
+prefix = /usr/local
+# makefile (from `Makefile', line 35)
+INSTALL = /usr/bin/install -c
+# environment
+USERNAME = indal.choi
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+MANDATORY_PATH = /usr/share/gconf/gnome-shell.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/gnome-shell:/usr/share/gnome:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-exRRS2s5tI,guid=5494549d1b3c22fc984c16b400000064
+# makefile (from `Makefile', line 66)
+VERSION = 0.8.13
+# default
+AS = as
+# makefile (from `Makefile', line 107)
+SRCS3 = cook.c data.c input.c assert.c
+# environment
+LC_COLLATE = en_US.UTF-8
+# makefile (from `Makefile', line 128)
+OBJS = $(OBJS1) $(OBJS2) $(OBJS3) $(OBJS4) $(OBJS5) $(OBJS64) $(OBJS_V)
+# default
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+CPP = /lib/cpp
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# makefile (from `Makefile', line 112)
+OBJS4 = nlist.o
+# default
+LEX = lex
+# environment
+PATH = /home/indal.choi/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/indal.choi/bin:/home/indal.choi/bin/android-sdk-linux/platform-tools:/home/indal.choi/bin/android-sdk-linux/tools:/home/indal.choi/t32/bin/pc_linux64:/usr/local/bin
+# makefile (from `Makefile', line 132)
+LIBOBJS = 
+# makefile (from `Makefile', line 29)
+LD = /home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ld
+# makefile (from `Makefile', line 73)
+top_srcdir = ..
+# makefile (from `Makefile', line 103)
+OBJS2 = 32.fsize.o 32.getehdr.o 32.getphdr.o 32.getshdr.o 32.newehdr.o 32.newphdr.o 32.xlatetof.o
+# default
+TEXI2DVI = texi2dvi
+# makefile (from `Makefile', line 49)
+SHLINK_SFX = .so
+# makefile (from `Makefile', line 51)
+LINK_SHLIB = $(CC) -shared -Wl,-soname,$(SONAME)
+# environment
+GPG_AGENT_INFO = /tmp/keyring-AnsMwY/gpg:0:1
+# default
+YACC = yacc
+# environment
+SESSION_MANAGER = local/indal-pc:@/tmp/.ICE-unix/1811,unix/indal-pc:/tmp/.ICE-unix/1811
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 25)
+includedir = ${prefix}/include
+# default
+ARFLAGS = rv
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 245)
+distdir = $(PACKAGE)-$(VERSION)
+# default
+LINT = lint
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# environment
+LC_MESSAGES = en_US.UTF-8
+# environment
+UBUNTU_MENUPROXY = libappmenu.so
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# makefile (from `Makefile', line 30)
+AR = ar
+# makefile (from `Makefile', line 42)
+LDFLAGS = -L/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm/usr/lib
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# default
+TANGLE = tangle
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+# makefile (from `Makefile', line 131)
+LIBSRCS = memset.c
+# environment
+SSH_AUTH_SOCK = /tmp/keyring-AnsMwY/ssh
+# default
+GET = get
+# makefile (from `Makefile', line 76)
+topdir = ..
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# makefile (from `Makefile', line 123)
+SRCS_V = verdef_32_tof.c verdef_32_tom.c verdef_64_tof.c verdef_64_tom.c
+# makefile (from `Makefile', line 23)
+exec_prefix = ${prefix}
+# default
+CTANGLE = ctangle
+# makefile (from `Makefile', line 72)
+srcdir = .
+# environment
+GTK_IM_MODULE = xim
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# makefile (from `Makefile', line 55)
+SHLINK = libelf$(SHLINK_SFX)
+# default
+LINK.C = $(LINK.cc)
+# environment
+PWD = /home/indal.choi/android/libelf/libelf-0.8.13/lib
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# environment
+SSH_AGENT_PID = 1850
+# makefile (from `Makefile', line 44)
+DEPSHLIBS = -lc
+# makefile (from `Makefile', line 95)
+OBJS1 = begin.o cntl.o end.o errmsg.o errno.o fill.o flag.o getarhdr.o getarsym.o getbase.o getdata.o getident.o getscn.o hash.o kind.o ndxscn.o newdata.o newscn.o next.o nextscn.o rand.o rawdata.o rawfile.o strptr.o update.o version.o checksum.o getaroff.o
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 24)
+libdir = ${exec_prefix}/lib
+# environment
+GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOME = /home/indal.choi
+# makefile (from `Makefile', line 39)
+CFLAGS = --sysroot=/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm
+# makefile (from `Makefile', line 125)
+HDRS_V = verdef.h verneed.h
+# makefile (from `Makefile', line 141)
+PRIVHDRS = byteswap.h errors.h ext_types.h private.h elf_repl.h $(HDRS_V)
+# environment
+XDG_SESSION_COOKIE = 6a7a6a6213852ba881249ad700000008-1328509566.721353-1600944668
+# environment
+LOGNAME = indal.choi
+# makefile (from `Makefile', line 34)
+RANLIB = ranlib
+# makefile (from `Makefile', line 61)
+COMPILE = $(CC) -c $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS) $(XCFLAGS)
+# environment
+T32SYS = /home/indal.choi/t32
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# makefile (from `Makefile', line 116)
+OBJS5 = opt.delscn.o x.remscn.o x.movscn.o x.elfext.o
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 67)
+MAJOR = 0
+# makefile (from `Makefile', line 48)
+SHLIB_SFX = .so.$(VERSION)
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 127)
+SRCS = $(SRCS1) $(SRCS2) $(SRCS3) $(SRCS4) $(SRCS5) $(SRCS64) $(SRCS_V)
+# makefile (from `Makefile', line 119)
+SRCS64 = 64.xlatetof.c gelfehdr.c gelfphdr.c gelfshdr.c gelftrans.c swap64.c
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 108)
+OBJS3 = cook.o data.o input.o assert.o
+# makefile (from `Makefile', line 28)
+CC = /home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = indal.choi
+# default
+FC = f77
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# makefile (from `Makefile', line 56)
+SONAME = libelf$(SONAME_SFX)
+# makefile (from `Makefile', line 246)
+distsubdir = $(topdir)/$(distdir)/$(subdir)
+# makefile (from `Makefile', line 144)
+DISTFILES = $(SRCS) $(LIBSRCS) $(HDRS) $(PRIVHDRS) Makefile.in sys_elf.h.in Makefile.w32 build.bat config.h.w32 libelf.def sys_elf.h.w32
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+GNOME_KEYRING_PID = 1800
+# makefile (from `Makefile', line 47)
+PICFLAGS = -fPIC -DPIC
+# default
+WEAVE = weave
+# default
+MAKE_COMMAND := make
+# makefile (from `Makefile', line 111)
+SRCS4 = nlist.c
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/indal.choi/android/libelf/libelf-0.8.13
+# makefile (from `Makefile', line 50)
+SONAME_SFX = .so.$(MAJOR)
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# makefile (from `Makefile', line 91)
+SRCS1 = begin.c cntl.c end.c errmsg.c errno.c fill.c flag.c getarhdr.c getarsym.c getbase.c getdata.c getident.c getscn.c hash.c kind.c ndxscn.c newdata.c newscn.c next.c nextscn.c rand.c rawdata.c rawfile.c strptr.c update.c version.c checksum.c getaroff.c
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 138)
+AUXHDRS = sys_elf.h
+# environment
+GNOME_KEYRING_CONTROL = /tmp/keyring-AnsMwY
+# makefile
+MAKEFLAGS = wp
+# environment
+MFLAGS = -wp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+# default
+M2C = m2c
+# environment
+DEFAULTS_PATH = /usr/share/gconf/gnome-shell.default.path
+# environment
+T32TMP = /tmp
+# default
+MAKEFILES := 
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 33)
+LN_S = ln -s
+# environment
+NDKROOT = /home/indal.choi/bin/android-ndk-r7
+# default
+CXX = g++
+# makefile (from `Makefile', line 46)
+DO_SHLIB = yes
+# default
+COFLAGS = 
+# makefile (from `Makefile', line 101)
+SRCS2 = 32.fsize.c 32.getehdr.c 32.getphdr.c 32.getshdr.c 32.newehdr.c 32.newphdr.c 32.xlatetof.c
+# makefile (from `Makefile', line 37)
+INSTALL_PROGRAM = ${INSTALL}
+# default
+COMPILE.C = $(COMPILE.cc)
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from `Makefile', line 43)
+LIBS = 
+# automatic
+^F = $(notdir $^)
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 31)
+MV = mv -f
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .r .y .l .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# makefile (from `Makefile', line 124)
+OBJS_V = verdef_32_tof.o verdef_32_tom.o verdef_64_tof.o verdef_64_tom.o
+# makefile (from `Makefile', line 52)
+INSTALL_SHLIB = $(INSTALL_PROGRAM)
+# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from `Makefile', line 36)
+INSTALL_DATA = ${INSTALL} -m 644
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+MAKELEVEL := 1
+# default
+MAKEINFO = makeinfo
+# makefile (from `Makefile', line 243)
+MAINT = maintainer-only-
+# makefile (from `Makefile', line 20)
+instroot = 
+# default
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+TEX = tex
+# makefile (from `Makefile', line 65)
+PACKAGE = libelf
+# environment
+LANG = en_US.UTF-8
+# makefile (from `Makefile', line 120)
+OBJS64 = 64.xlatetof.o gelfehdr.o gelfphdr.o gelfshdr.o gelftrans.o swap64.o
+# environment
+TERM = xterm
+# default
+F77FLAGS = $(FFLAGS)
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 26)
+installdirs = $(libdir) $(includedir) $(includedir)/libelf
+# variable set hash-table stats:
+# Load=200/1024=20%, Rehash=0, Collisions=53/353=15%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# SCCS: could not be stat'd.
+# . (device 2052, inode 3161257): 186 files, 93 impossibilities.
+# ../SCCS: could not be stat'd.
+# ../RCS: could not be stat'd.
+# .. (device 2052, inode 3161238): 31 files, 3 impossibilities.
+# RCS: could not be stat'd.
+
+# 217 files, 96 impossibilities in 6 directories.
+
+# Implicit Rules
+
+%.c:
+
+%: %.c
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.c
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+%.o:
+
+%: %.o
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+(%): %
+#  commands to execute (built-in):
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  commands to execute (built-in):
+	@rm -f $@ 
+	cp $< $@
+
+%.c: %.w %.ch
+#  commands to execute (built-in):
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  commands to execute (built-in):
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 14 implicit rules, 5 (35.7%) terminal.
+
+# Files
+
+# Not a target:
+swap64.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+getdata.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ndxscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.web.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TANGLE) $<
+
+# Not a target:
+next.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+strptr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+maintainer-clean: distclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+32.xlatetof.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+getarhdr.o: getarhdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getarhdr'
+#  Last modified 2012-02-10 15:26:31.644519028
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+data.o: data.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `data'
+#  Last modified 2012-02-10 15:26:35.412519222
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+rand.o: rand.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `rand'
+#  Last modified 2012-02-10 15:26:32.85251909
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.l.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LEX.l) $< > $@ 
+	mv -f lex.yy.r $@
+
+# Not a target:
+getscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+uninstall-compat-no:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+nlist.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+32.getphdr.o: 32.getphdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.getphdr'
+#  Last modified 2012-02-10 15:26:34.100519155
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.F.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+32.getehdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gelfshdr.o: gelfshdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `gelfshdr'
+#  Last modified 2012-02-10 15:26:37.200519315
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+cntl.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: libelf.a shared-yes
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/57=0%
+
+# Not a target:
+.y.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	$(LINT.c) -C$* y.tab.c 
+	$(RM) y.tab.c
+
+# Not a target:
+.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+Makefile.w32:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+verdef_32_tof.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.def.sym:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+getdata.o: getdata.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getdata'
+#  Last modified 2012-02-10 15:26:31.968519045
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+sys_elf.h:
+#  Implicit rule search has been done.
+#  Last modified 2012-02-10 14:57:58.812430708
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+verdef_64_tom.o: verdef_64_tom.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h verdef.h verneed.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `verdef_64_tom'
+#  Last modified 2012-02-10 15:26:38.344519374
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+Makefile.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.p.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.txinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+hash.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+getaroff.c:
+#  Implicit rule search has been done.
+#  Last modified 2009-11-01 22:04:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+errmsg.o: errmsg.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `errmsg'
+#  Last modified 2012-02-10 15:26:31.268519009
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+verdef_32_tom.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install-compat-no:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-compat: installdirs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 214):
+	files="$(HDRS)"; for file in $$files; do \
+	if test -f $(instroot)$(includedir)/$$file; then true; else \
+	echo "#include <libelf/$$file>" > $(instroot)$(includedir)/$$file; \
+	fi; \
+	done
+	
+
+# Not a target:
+fill.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gelfphdr.o: gelfphdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `gelfphdr'
+#  Last modified 2012-02-10 15:26:37.092519309
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.l.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $*.c
+	$(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	$(RM) $*.c
+
+distclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 236):
+	$(RM) stamp-h $(AUXHDRS)
+	$(RM) Makefile
+	
+
+# Not a target:
+.w.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CTANGLE) $< - $@
+
+# Not a target:
+.texi.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	cat $< >$@ 
+	chmod a+x $@
+
+# Not a target:
+x.movscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+nlist.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+getaroff.o: getaroff.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getaroff'
+#  Last modified 2012-02-10 15:26:33.800519139
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+uninstall-compat-yes: uninstall-compat
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.cc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+verdef_64_tom.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.cc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+fill.o: fill.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `fill'
+#  Last modified 2012-02-10 15:26:31.448519018
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+maintainer-only-sys_elf.h: stamp-h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+getarsym.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+build.bat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rawdata.o: rawdata.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `rawdata'
+#  Last modified 2012-02-10 15:26:32.952519096
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+install-compat-yes: install-compat
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.SUFFIXES: .c .o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rawdata.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+rawfile.o: rawfile.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `rawfile'
+#  Last modified 2012-02-10 15:26:33.0285191
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+uninstall: uninstall-data uninstall-shared-yes uninstall-compat-yes
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2012-02-10 15:25:50.920516928
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.r.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+mostlyclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 230):
+	$(RM) *.o *.a *.os $(SHLIB) $(SONAME) $(SHLINK)
+	$(RM) *~ core a.out errlist
+	
+
+# Not a target:
+.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+32.fsize.o: 32.fsize.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h ext_types.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.fsize'
+#  Last modified 2012-02-10 15:26:33.908519145
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+sys_elf.h.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+begin.o: begin.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `begin'
+#  Last modified 2012-02-10 15:26:30.976518994
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+update.o: update.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `update'
+#  Last modified 2012-02-10 15:26:33.468519122
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+newdata.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+64.xlatetof.o: 64.xlatetof.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `64.xlatetof'
+#  Last modified 2012-02-10 15:26:36.856519297
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+kind.o: kind.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `kind'
+#  Last modified 2012-02-10 15:26:32.332519064
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+32.getphdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+newscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+uninstall-shared-no:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+32.newehdr.o: 32.newehdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.newehdr'
+#  Last modified 2012-02-10 15:26:34.296519165
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+getarhdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.l.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $@ 
+	$(LEX.l) $< > $@
+
+# Not a target:
+elf_repl.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+getident.o: getident.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getident'
+#  Last modified 2012-02-10 15:26:32.06051905
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+data.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+rand.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+errno.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+libelf.a: begin.o cntl.o end.o errmsg.o errno.o fill.o flag.o getarhdr.o getarsym.o getbase.o getdata.o getident.o getscn.o hash.o kind.o ndxscn.o newdata.o newscn.o next.o nextscn.o rand.o rawdata.o rawfile.o strptr.o update.o version.o checksum.o getaroff.o 32.fsize.o 32.getehdr.o 32.getphdr.o 32.getshdr.o 32.newehdr.o 32.newphdr.o 32.xlatetof.o cook.o data.o input.o assert.o nlist.o opt.delscn.o x.remscn.o x.movscn.o x.elfext.o 64.xlatetof.o gelfehdr.o gelfphdr.o gelfshdr.o gelftrans.o swap64.o verdef_32_tof.o verdef_32_tom.o verdef_64_tof.o verdef_64_tom.o
+#  Implicit rule search has not been done.
+#  Last modified 2012-02-10 15:26:38.352519374
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 155):
+	@$(RM) $@
+	$(AR) rcv $@ $(OBJS) $(LIBOBJS)
+	$(RANLIB) $@
+	
+
+maintainer-only-dist: begin.c cntl.c end.c errmsg.c errno.c fill.c flag.c getarhdr.c getarsym.c getbase.c getdata.c getident.c getscn.c hash.c kind.c ndxscn.c newdata.c newscn.c next.c nextscn.c rand.c rawdata.c rawfile.c strptr.c update.c version.c checksum.c getaroff.c 32.fsize.c 32.getehdr.c 32.getphdr.c 32.getshdr.c 32.newehdr.c 32.newphdr.c 32.xlatetof.c cook.c data.c input.c assert.c nlist.c opt.delscn.c x.remscn.c x.movscn.c x.elfext.c 64.xlatetof.c gelfehdr.c gelfphdr.c gelfshdr.c gelftrans.c swap64.c verdef_32_tof.c verdef_32_tom.c verdef_64_tof.c verdef_64_tom.c memset.c libelf.h nlist.h gelf.h byteswap.h errors.h ext_types.h private.h elf_repl.h verdef.h verneed.h Makefile.in sys_elf.h.in Makefile.w32 build.bat config.h.w32 libelf.def sys_elf.h.w32
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 248):
+	if test -d $(distsubdir); then true; else mkdir $(distsubdir); fi
+	files="$(DISTFILES)"; for file in $$files; do \
+	ln $(srcdir)/$$file $(distsubdir) || \
+	cp -p $(srcdir)/$$file $(distsubdir) || exit 1; \
+	done
+	
+
+# Not a target:
+.C:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+config.h.w32:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.r.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+flag.o: flag.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `flag'
+#  Last modified 2012-02-10 15:26:31.556519025
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.texinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.w.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CWEAVE) $< - $@
+
+# Not a target:
+.c.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINT.c) -C$* $<
+
+# Not a target:
+.s.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+# Not a target:
+.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+nextscn.o: nextscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `nextscn'
+#  Last modified 2012-02-10 15:26:32.760519086
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+.NOEXPORT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+libelf.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stamp-h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../mkinstalldirs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+32.newphdr.o: 32.newphdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.newphdr'
+#  Last modified 2012-02-10 15:26:34.40051917
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+32.xlatetof.o: 32.xlatetof.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.xlatetof'
+#  Last modified 2012-02-10 15:26:35.140519209
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+errmsg.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+uninstall-shared-yes: uninstall-shared
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+32.getshdr.o: 32.getshdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.getshdr'
+#  Last modified 2012-02-10 15:26:34.184519159
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+gelfehdr.o: gelfehdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `gelfehdr'
+#  Last modified 2012-02-10 15:26:36.972519303
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+assert.o: assert.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `assert'
+#  Last modified 2012-02-10 15:26:35.608519233
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+memset.o: ../config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.texinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+input.o: input.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `input'
+#  Last modified 2012-02-10 15:26:35.508519227
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+ext_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+opt.delscn.o: opt.delscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `opt.delscn'
+#  Last modified 2012-02-10 15:26:35.860519246
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+gelftrans.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+nextscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.y.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	mv -f y.tab.c $@
+
+version.o: version.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `version'
+#  Last modified 2012-02-10 15:26:33.576519128
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+gelf.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.web.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(WEAVE) $<
+
+# Not a target:
+.texi.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+shared-no:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sys_elf.h.w32:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+x.remscn.o: x.remscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `x.remscn'
+#  Last modified 2012-02-10 15:26:35.960519251
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+x.elfext.o: x.elfext.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `x.elfext'
+#  Last modified 2012-02-10 15:26:36.152519261
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+verdef_64_tof.o: verdef_64_tof.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h verdef.h verneed.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `verdef_64_tof'
+#  Last modified 2012-02-10 15:26:38.168519365
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+x.remscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+rawfile.c:
+#  Implicit rule search has been done.
+#  Last modified 2009-05-23 02:07:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install-data: all installdirs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 178):
+	$(INSTALL_DATA) libelf.a $(instroot)$(libdir)
+	-cd $(instroot)$(libdir) && $(RANLIB) libelf.a
+	files="$(HDRS) $(AUXHDRS) elf_repl.h"; for file in $$files; do \
+	if test -r $$file; then \
+	$(INSTALL_DATA) $$file $(instroot)$(includedir)/libelf; \
+	else \
+	$(INSTALL_DATA) $(srcdir)/$$file $(instroot)$(includedir)/libelf; \
+	fi; \
+	done
+	
+
+uninstall-shared:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 209):
+	cd $(instroot)$(libdir) && $(RM) $(SHLIB) $(SONAME) $(SHLINK)
+	
+
+# Not a target:
+begin.c:
+#  Implicit rule search has been done.
+#  Last modified 2009-11-01 22:04:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+libelf.so.0.8.13: libelf.a
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  Modification time never checked.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := libelf.so.0.8.13
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := libelf.a
+# automatic
+# | := 
+# automatic
+# < := libelf.a
+# automatic
+# ^ := libelf.a
+# automatic
+# ? := libelf.a
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=10/65=15%
+#  commands to execute (from `Makefile', line 160):
+	@$(RM) $(SHLIB)
+	$(LINK_SHLIB) -o $(SHLIB) $(OBJS:.o=.os) $(LIBOBJS:.o=.os) $(DEPSHLIBS)
+	if test "$(SONAME)" = "$(SHLIB)"; then true; else \
+	$(RM) $(SONAME) && $(LN_S) $(SHLIB) $(SONAME); \
+	fi
+	if test "$(SHLINK)" = "$(SHLIB)"; then true; else \
+	$(RM) $(SHLINK) && $(LN_S) $(SHLIB) $(SHLINK); \
+	fi
+	
+
+swap64.o: swap64.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `swap64'
+#  Last modified 2012-02-10 15:26:37.596519335
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+shared-yes: libelf.so.0.8.13
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/57=0%
+
+# Not a target:
+update.c:
+#  Implicit rule search has been done.
+#  Last modified 2009-05-23 02:08:09
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ndxscn.o: ndxscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ndxscn'
+#  Last modified 2012-02-10 15:26:32.408519068
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.tex.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEX) $<
+
+# Not a target:
+64.xlatetof.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+next.o: next.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `next'
+#  Last modified 2012-02-10 15:26:32.676519081
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+strptr.o: strptr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `strptr'
+#  Last modified 2012-02-10 15:26:33.132519105
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+clean: mostlyclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.C.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# Not a target:
+32.newehdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+getscn.o: getscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getscn'
+#  Last modified 2012-02-10 15:26:32.148519054
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+cook.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+nlist.o: nlist.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h nlist.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `nlist'
+#  Last modified 2012-02-10 15:26:35.74851924
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.txinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+getident.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+32.getehdr.o: 32.getehdr.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `32.getehdr'
+#  Last modified 2012-02-10 15:26:34.016519151
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+errors.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+cook.o: cook.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `cook'
+#  Last modified 2012-02-10 15:26:35.328519218
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+verdef_32_tof.o: verdef_32_tof.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h verdef.h verneed.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `verdef_32_tof'
+#  Last modified 2012-02-10 15:26:37.776519344
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+flag.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install-shared: installdirs libelf.so.0.8.13
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 198):
+	$(INSTALL_SHLIB) $(SHLIB) $(instroot)$(libdir)
+	if test "$(SONAME)" = "$(SHLIB)"; then true; else \
+	cd $(instroot)$(libdir) && $(RM) $(SONAME) && $(LN_S) $(SHLIB) $(SONAME); \
+	fi
+	if test "$(SHLINK)" = "$(SHLIB)"; then true; else \
+	cd $(instroot)$(libdir) && $(RM) $(SHLINK) && $(LN_S) $(SHLIB) $(SHLINK); \
+	fi
+	
+
+# Not a target:
+getbase.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install-shared-no:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+hash.o: hash.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `hash'
+#  Last modified 2012-02-10 15:26:32.248519059
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+maintainer-only-stamp-h: sys_elf.h.in ../config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 262):
+	cd $(topdir) && CONFIG_FILES= CONFIG_HEADERS=$(subdir)/sys_elf.h ./config.status
+	$(RM) stamp-h && echo timestamp > stamp-h
+	
+
+# Not a target:
+libelf.h:
+#  Implicit rule search has been done.
+#  Last modified 2009-07-08 02:57:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+cntl.o: cntl.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `cntl'
+#  Last modified 2012-02-10 15:26:31.068518999
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.S.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+# Not a target:
+.mod:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+verdef_32_tom.o: verdef_32_tom.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h ext_types.h verdef.h verneed.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `verdef_32_tom'
+#  Last modified 2012-02-10 15:26:37.964519354
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+.mod.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+# Not a target:
+.F.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+32.fsize.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+verneed.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+getbase.o: getbase.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getbase'
+#  Last modified 2012-02-10 15:26:31.856519039
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+x.movscn.o: x.movscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `x.movscn'
+#  Last modified 2012-02-10 15:26:36.048519255
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+kind.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.S.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.S) -o $@ $<
+
+# Not a target:
+32.getshdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+gelfehdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+assert.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+maintainer-only-Makefile: Makefile.in ../config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 258):
+	cd $(topdir) && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= ./config.status
+	
+
+# Not a target:
+memset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uninstall-compat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 223):
+	files="$(HDRS)"; for file in $$files; do \
+	if grep "^#include <libelf/$$file>\$$" $(instroot)$(includedir)/$$file >/dev/null 2>&1; then \
+	$(RM) $(instroot)$(includedir)/$$file; \
+	else true; fi; \
+	done
+	
+
+install-shared-yes: install-shared
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+input.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+gelfphdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+check:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+opt.delscn.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+getarsym.o: getarsym.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h byteswap.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `getarsym'
+#  Last modified 2012-02-10 15:26:31.772519035
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+verdef.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+uninstall-data:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 192):
+	$(RM) $(instroot)$(libdir)/libelf.a
+	$(RM) -r $(instroot)$(includedir)/libelf
+	
+
+# Not a target:
+end.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../config.status:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+installdirs: ../mkinstalldirs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 173):
+	dirs="$(installdirs)"; for dir in $$dirs; do \
+	$(SHELL) $(top_srcdir)/mkinstalldirs $(instroot)$$dir; \
+	done
+	
+
+# Not a target:
+version.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+32.newphdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+checksum.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.F:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+errno.o: errno.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `errno'
+#  Last modified 2012-02-10 15:26:31.360519014
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+byteswap.h:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+x.elfext.c:
+#  Implicit rule search has been done.
+#  Last modified 2009-07-08 02:57:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+verdef_64_tof.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+end.o: end.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `end'
+#  Last modified 2012-02-10 15:26:31.172519005
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+newdata.o: newdata.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `newdata'
+#  Last modified 2012-02-10 15:26:32.492519072
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# Not a target:
+../config.h:
+#  Implicit rule search has been done.
+#  Last modified 2012-02-10 14:57:58.800430708
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+private.h:
+#  Implicit rule search has been done.
+#  Last modified 2009-11-01 22:04:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.f.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# Not a target:
+gelfshdr.c:
+#  Implicit rule search has been done.
+#  Last modified 2008-05-23 17:15:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install: install-data install-shared-yes install-compat-yes
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gelftrans.o: gelftrans.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `gelftrans'
+#  Last modified 2012-02-10 15:26:37.480519329
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+checksum.o: checksum.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `checksum'
+#  Last modified 2012-02-10 15:26:33.700519134
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+newscn.o: newscn.c private.h ../config.h libelf.h gelf.h errors.h sys_elf.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `newscn'
+#  Last modified 2012-02-10 15:26:32.600519077
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 82):
+	@$(RM) $@ $(@:.o=.os)
+	if test -n "$(PICFLAGS)"; then \
+	$(COMPILE) $(PICFLAGS) $< && $(MV) $@ $(@:.o=.os); \
+	else true; fi
+	$(COMPILE) $<
+	
+
+# files hash-table stats:
+# Load=212/1024=21%, Rehash=0, Collisions=650/1920=34%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Feb 10 15:27:33 2012
+
+# make[1]: Leaving directory `/media/data/android_prj/libelf/libelf-0.8.13/lib'
+make: *** [all-recursive] Error 1
+
+# Make data base, printed on Fri Feb 10 15:27:33 2012
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = gnome-shell
+# environment
+LC_CTYPE = en_US.UTF-8
+# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 36)
+CPPFLAGS = --sysroot=/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm
+# environment
+T32ID = T32
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/indal.choi/.Xauthority
+# environment
+GDMSESSION = gnome-shell
+# environment
+XMODIFIERS = @im=nabi
+# makefile
+CURDIR := /media/data/android_prj/libelf/libelf-0.8.13
+# makefile (from `Makefile', line 45)
+SHELL = /bin/sh
+# makefile (from `Makefile', line 29)
+RM = rm -f
+# default
+CO = co
+# environment
+_ = /usr/bin/make
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-gnome-shell:/etc/xdg
+# default
+OUTPUT_OPTION = -o $@
+# makefile (from `Makefile', line 54)
+DISTFILES = acconfig.h aclocal.m4 ChangeLog config.guess config.h.in config.sub configure configure.in COPYING.LIB INSTALL install-sh Makefile.in mkinstalldirs README stamp-h.in VERSION libelf.pc.in
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 22)
+prefix = /usr/local
+# makefile (from `Makefile', line 31)
+INSTALL = /usr/bin/install -c
+# environment
+USERNAME = indal.choi
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+MANDATORY_PATH = /usr/share/gconf/gnome-shell.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/gnome-shell:/usr/share/gnome:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-exRRS2s5tI,guid=5494549d1b3c22fc984c16b400000064
+# makefile (from `Makefile', line 43)
+VERSION = 0.8.13
+# default
+AS = as
+# environment
+LC_COLLATE = en_US.UTF-8
+# default
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+CPP = /lib/cpp
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+LEX = lex
+# environment
+PATH = /home/indal.choi/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/indal.choi/bin:/home/indal.choi/bin/android-sdk-linux/platform-tools:/home/indal.choi/bin/android-sdk-linux/tools:/home/indal.choi/t32/bin/pc_linux64:/usr/local/bin
+# environment
+LD = /home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ld
+# default
+TEXI2DVI = texi2dvi
+# environment
+GPG_AGENT_INFO = /tmp/keyring-AnsMwY/gpg:0:1
+# default
+YACC = yacc
+# environment
+SESSION_MANAGER = local/indal-pc:@/tmp/.ICE-unix/1811,unix/indal-pc:/tmp/.ICE-unix/1811
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 186)
+RECHECK_FLAGS = CC='$(CC)' CPPFLAGS='$(CPPFLAGS)' CFLAGS='$(CFLAGS)' LDFLAGS='$(LDFLAGS)' LIBS='$(LIBS)'
+# makefile (from `Makefile', line 35)
+CFLAGS = --sysroot=/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm
+# default
+ARFLAGS = rv
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 111)
+distdir = $(PACKAGE)-$(VERSION)
+# default
+LINT = lint
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 147)
+TRACKFS = trackfs
+# environment
+LC_MESSAGES = en_US.UTF-8
+# environment
+UBUNTU_MENUPROXY = libappmenu.so
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# environment
+AR = /home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-ar
+# makefile (from `Makefile', line 37)
+LDFLAGS = -L/home/indal.choi/bin/android-ndk-r7/platforms/android-9/arch-arm/usr/lib
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# default
+TANGLE = tangle
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+SSH_AUTH_SOCK = /tmp/keyring-AnsMwY/ssh
+# default
+GET = get
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# makefile (from `Makefile', line 23)
+exec_prefix = ${prefix}
+# makefile (from `Makefile', line 112)
+DISTPERMS = --owner=root --group=root --numeric-owner
+# default
+CTANGLE = ctangle
+# makefile (from `Makefile', line 48)
+srcdir = .
+# environment
+GTK_IM_MODULE = xim
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# default
+LINK.C = $(LINK.cc)
+# environment
+PWD = /home/indal.choi/android/libelf/libelf-0.8.13
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# environment
+SSH_AGENT_PID = 1850
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 24)
+libdir = ${exec_prefix}/lib
+# environment
+GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOME = /home/indal.choi
+# makefile (from `Makefile', line 52)
+DISTSUBDIRS = lib po
+# environment
+XDG_SESSION_COOKIE = 6a7a6a6213852ba881249ad700000008-1328509566.721353-1600944668
+# environment
+LOGNAME = indal.choi
+# makefile (from `Makefile', line 26)
+pkgdir = $(libdir)/pkgconfig
+# environment
+T32SYS = /home/indal.choi/t32
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 34)
+CC = /home/indal.choi/bin/android-ndk-r7/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = indal.choi
+# default
+FC = f77
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+GNOME_KEYRING_PID = 1800
+# default
+WEAVE = weave
+# default
+MAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/indal.choi/android/libelf
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# environment
+GNOME_KEYRING_CONTROL = /tmp/keyring-AnsMwY
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+# default
+M2C = m2c
+# environment
+DEFAULTS_PATH = /usr/share/gconf/gnome-shell.default.path
+# environment
+T32TMP = /tmp
+# default
+MAKEFILES := 
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 30)
+LN_S = ln -s
+# environment
+NDKROOT = /home/indal.choi/bin/android-ndk-r7
+# default
+CXX = g++
+# default
+COFLAGS = 
+# default
+COMPILE.C = $(COMPILE.cc)
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from `Makefile', line 38)
+LIBS = 
+# automatic
+^F = $(notdir $^)
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# makefile (from `Makefile', line 28)
+MV = mv -f
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .r .y .l .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from `Makefile', line 32)
+INSTALL_DATA = ${INSTALL} -m 644
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+MAKELEVEL := 0
+# default
+MAKEINFO = makeinfo
+# makefile (from `Makefile', line 109)
+MAINT = maintainer-only-
+# makefile (from `Makefile', line 20)
+instroot = 
+# default
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+TEX = tex
+# makefile (from `Makefile', line 51)
+SUBDIRS = lib 
+# makefile (from `Makefile', line 42)
+PACKAGE = libelf
+# environment
+LANG = en_US.UTF-8
+# environment
+TERM = xterm
+# default
+F77FLAGS = $(FFLAGS)
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# variable set hash-table stats:
+# Load=159/1024=16%, Rehash=0, Collisions=20/224=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# SCCS: could not be stat'd.
+# . (device 2052, inode 3161238): 31 files, 34 impossibilities.
+# RCS: could not be stat'd.
+
+# 31 files, 34 impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.out:
+
+%.a:
+
+%.ln:
+
+%.o:
+
+%: %.o
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  commands to execute (built-in):
+	$(LINT.c) -C$* $<
+
+%.o: %.c
+#  commands to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  commands to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  commands to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.C:
+
+%: %.C
+#  commands to execute (built-in):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.C
+#  commands to execute (built-in):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  commands to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+#  commands to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  commands to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  commands to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  commands to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  commands to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.F:
+
+%: %.F
+#  commands to execute (built-in):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.F
+#  commands to execute (built-in):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+%.f: %.F
+#  commands to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+%.r:
+
+%: %.r
+#  commands to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  commands to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  commands to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	$(LINT.c) -C$* y.tab.c 
+	$(RM) y.tab.c
+
+%.c: %.y
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  commands to execute (built-in):
+	@$(RM) $*.c
+	$(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	$(RM) $*.c
+
+%.c: %.l
+#  commands to execute (built-in):
+	@$(RM) $@ 
+	$(LEX.l) $< > $@
+
+%.r: %.l
+#  commands to execute (built-in):
+	$(LEX.l) $< > $@ 
+	mv -f lex.yy.r $@
+
+%.s:
+
+%: %.s
+#  commands to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  commands to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+%.S:
+
+%: %.S
+#  commands to execute (built-in):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.S
+#  commands to execute (built-in):
+	$(COMPILE.S) -o $@ $<
+
+%.s: %.S
+#  commands to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+%.mod:
+
+%: %.mod
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  commands to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  commands to execute (built-in):
+	$(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  commands to execute (built-in):
+	$(CTANGLE) $< - $@
+
+%.tex: %.w
+#  commands to execute (built-in):
+	$(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  commands to execute (built-in):
+	$(TANGLE) $<
+
+%.tex: %.web
+#  commands to execute (built-in):
+	$(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  commands to execute (built-in):
+	cat $< >$@ 
+	chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  commands to execute (built-in):
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  commands to execute (built-in):
+	@rm -f $@ 
+	cp $< $@
+
+%.c: %.w %.ch
+#  commands to execute (built-in):
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  commands to execute (built-in):
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 86 implicit rules, 5 (5.8%) terminal.
+
+# Files
+
+# Not a target:
+.web.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TANGLE) $<
+
+maintainer-clean: maintainer-clean-recursive maintainer-clean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-local: mkinstalldirs libelf.pc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 85):
+	$(SHELL) $(srcdir)/mkinstalldirs $(instroot)$(pkgdir)
+	$(INSTALL_DATA) libelf.pc $(instroot)$(pkgdir)
+	
+
+# Not a target:
+.l.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LEX.l) $< > $@ 
+	mv -f lex.yy.r $@
+
+# Not a target:
+.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-clean-local: distclean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+	$(RM) config.h.in configure stamp-dist
+	$(RM) -r $(distdir)
+	
+
+# Not a target:
+install-sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.F.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+all: all-recursive all-local
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+.y.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	$(LINT.c) -C$* y.tab.c 
+	$(RM) y.tab.c
+
+# Not a target:
+.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.y:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.def.sym:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+maintainer-only-check-dist:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 134):
+	$(RM) -r disttest
+	mkdir disttest
+	@echo 'unset CC CFLAGS CPPFLAGS LDFLAGS LIBS' >disttest/config.site
+	cd disttest && CONFIG_SITE=config.site ../$(distdir)/configure
+	$(MAKE) -C disttest
+	$(MAKE) -C disttest check
+	$(MAKE) -C disttest dist
+	
+
+.PHONY: tags
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+acconfig.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+INSTALL:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.p.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.txinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+all-local:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+VERSION:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+README:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-compat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 69):
+	cd lib && $(MAKE) $@
+	
+
+# Not a target:
+.l.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $*.c
+	$(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	$(RM) $*.c
+
+distclean: distclean-recursive distclean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.w.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CTANGLE) $< - $@
+
+# Not a target:
+.texi.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	cat $< >$@ 
+	chmod a+x $@
+
+# Not a target:
+.cc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+libelf.pc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.cc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+maintainer-only-lib/stamp-h: lib/sys_elf.h.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 177):
+	CONFIG_FILES= CONFIG_HEADERS=lib/sys_elf.h ./config.status
+	$(RM) lib/stamp-h && echo timestamp > lib/stamp-h
+	
+
+# Not a target:
+libelf.pc.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lib/stamp-h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .r .y .l .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean-local: clean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 97):
+	$(RM) config.cache config.h config.log config.status stamp-h
+	$(RM) Makefile
+	$(RM) libelf.pc
+	
+
+tags:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 144):
+	rm -f tags
+	ctags lib/*.c lib/*.h
+	
+
+uninstall: uninstall-recursive uninstall-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2012-02-10 15:25:50.888516928
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.r.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+mostlyclean: mostlyclean-recursive mostlyclean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+maintainer-clean-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+maintainer-only-po/Makefile: po/Makefile.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 181):
+	CONFIG_FILES=$@ CONFIG_HEADERS= ./config.status
+	
+
+# Not a target:
+configure:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+configure.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mostlyclean-local:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 92):
+	$(RM) *~ core errlist
+	
+
+# Not a target:
+.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.elc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $@ 
+	$(LEX.l) $< > $@
+
+clean-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+# Not a target:
+.out:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-dist: stamp-dist
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.C:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.r.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.w.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CWEAVE) $< - $@
+
+# Not a target:
+.c.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINT.c) -C$* $<
+
+# Not a target:
+.s.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+# Not a target:
+.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+.NOEXPORT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stamp-h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mkinstalldirs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uninstall-local:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 89):
+	$(RM) $(instroot)$(pkgdir)/libelf.pc
+	
+
+# Not a target:
+stamp-h.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+config.sub:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-lib/sys_elf.h: lib/stamp-h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.texinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.el:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lib/sys_elf.h.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+config.status:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.texinfo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stamp-dist:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.y.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	mv -f y.tab.c $@
+
+# Not a target:
+aclocal.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.web.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(WEAVE) $<
+
+# Not a target:
+.texi.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+# Not a target:
+config.h.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-reconfig:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 193):
+	$(RM) config.cache
+	$(RECHECK_FLAGS) ./config.status --recheck
+	
+
+# Not a target:
+.tex.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEX) $<
+
+maintainer-only-libelf.pc: libelf.pc.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 184):
+	CONFIG_FILES=$@ CONFIG_HEADERS= ./config.status
+	
+
+# Not a target:
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+COPYING.LIB:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: clean-recursive clean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-lib/Makefile: lib/Makefile.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 173):
+	CONFIG_FILES=$@ CONFIG_HEADERS= ./config.status
+	
+
+# Not a target:
+po/Makefile.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.C.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-./configure: configure.in aclocal.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 155):
+	$(RM) $(srcdir)/configure
+	cd $(srcdir) && autoconf
+	
+
+# Not a target:
+.texi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lib/Makefile.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+# Not a target:
+.txinfo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-config.h: stamp-h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+clean-local: mostlyclean-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.ch:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+uninstall-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+# Not a target:
+config.guess:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all-recursive:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  Modification time never checked.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := all-recursive
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+maintainer-only-stamp-h: config.h.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 166):
+	CONFIG_FILES= CONFIG_HEADERS=config.h ./config.status
+	$(RM) stamp-h && echo timestamp > stamp-h
+	
+
+# Not a target:
+.S.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+# Not a target:
+.mod:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+# Not a target:
+.mod.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+maintainer-only-./stamp-h.in: configure.in acconfig.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 160):
+	$(RM) $(srcdir)/config.h.in
+	cd $(srcdir) && autoheader
+	cd $(srcdir) && $(RM) stamp-h.in && echo timestamp > stamp-h.in
+	
+
+# Not a target:
+.F.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.w:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.S.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.S) -o $@ $<
+
+maintainer-only-Makefile: Makefile.in config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 170):
+	CONFIG_FILES=$@ CONFIG_HEADERS= ./config.status
+	
+
+uninstall-compat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 69):
+	cd lib && $(MAKE) $@
+	
+
+maintainer-only-config.status: configure config.h.in VERSION
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 190):
+	$(RECHECK_FLAGS) ./config.status --recheck
+	
+
+check: check-recursive check-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ChangeLog:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+maintainer-only-./stamp-dist: acconfig.h aclocal.m4 ChangeLog config.guess config.h.in config.sub configure configure.in COPYING.LIB INSTALL install-sh Makefile.in mkinstalldirs README stamp-h.in VERSION libelf.pc.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 115):
+	$(RM) -r $(distdir)
+	mkdir $(distdir)
+	files="$(DISTFILES)"; for file in $$files; do \
+	ln $(srcdir)/$$file $(distdir) || \
+	cp -p $(srcdir)/$$file $(distdir) || exit 1; \
+	done
+	subdirs="$(DISTSUBDIRS)"; for subdir in $$subdirs; do \
+	(cd $$subdir && $(MAKE) dist) || exit 1; \
+	done
+	cd $(distdir) && \
+	find . -type f ! -name MANIFEST -exec wc -c {} \; | \
+	sed 's, \./, ,' | sort -k2 >MANIFEST
+	-$(RM) $(distdir).tar.gz.bak $(PACKAGE).tar.gz
+	-$(MV) $(distdir).tar.gz $(distdir).tar.gz.bak
+	tar cvohfz $(distdir).tar.gz $(DISTPERMS) $(distdir)
+	$(LN_S) $(distdir).tar.gz $(PACKAGE).tar.gz
+	$(RM) stamp-dist && echo timestamp > stamp-dist
+	
+
+trackinstall:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 149):
+	$(TRACKFS) -l install.log -b backup.cpio $(MAKE) install
+	
+
+# Not a target:
+.l:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.F:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+check-local:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.web:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+maintainer-only-./config.h.in: stamp-h.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.sym:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.f.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+install: install-recursive install-local
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mostlyclean-recursive:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@subdirs="$(SUBDIRS)"; for subdir in $$subdirs; do \
+	target=`echo $@|sed 's,-recursive,,'`; \
+	echo making $$target in $$subdir; \
+	(cd $$subdir && $(MAKE) $$target) || exit 1; \
+	done
+	
+
+# files hash-table stats:
+# Load=138/1024=13%, Rehash=0, Collisions=449/1515=30%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Feb 10 15:27:33 2012
+

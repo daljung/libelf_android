@@ -1,0 +1,317 @@
+libelf (0.8.13-3) unstable; urgency=low
+
+  * Tweaked description to be more correct. (Closes: #631624)
+
+ -- Alex Pennace <alex@pennace.org>  Mon, 27 Jun 2011 17:49:04 -0400
+
+libelf (0.8.13-2) unstable; urgency=low
+
+  * Patch aclocal.m4 and autoreconf to allow cross-building to work for
+    armhf, thanks Steve McIntyre. (Closes: #630378)
+
+ -- Alex Pennace <alex@pennace.org>  Mon, 13 Jun 2011 11:33:33 -0400
+
+libelf (0.8.13-1) unstable; urgency=low
+
+  * Acknowledge NMU, thanks Matthias Klose. (closes: #525777, 548865).
+  * New upstream version.
+
+ -- Alex Pennace <alex@pennace.org>  Sun, 21 Mar 2010 22:38:09 -0400
+
+libelf (0.8.12-0.1) unstable; urgency=low
+
+  * Non-maintainer upload, upload to delayed/3.
+  * New upstream version, required by GCC builds from the trunk.
+    See #548865.
+  * Update config.{sub,guess}. Closes: #525777.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 03 Oct 2009 22:29:51 +0200
+
+libelf (0.8.10-2) unstable; urgency=low
+
+  * Ensure that we always install the libelf compatability headers into
+    /usr/include. Thanks Lucas Nussbaum and Josselin Mouette.
+    (closes: #477025)
+  * Fixed 0.8.10-1 changelog entry to refer to correct bugs.
+
+ -- Alex Pennace <alex@pennace.org>  Sat, 26 Apr 2008 15:19:03 -0400
+
+libelf (0.8.10-1) unstable; urgency=low
+
+  * New upstream release. (closes: #387602, 447262)
+  * Added some diagnostics to see what ./configure is thinking.
+  * Upstream has added four functions since 0.8.6-4: elf_getphnum(),
+    elf_getshnum(), elf_getshstrndx() and elfx_update_shstrndx(). Bumping
+    shlibs from 0.8.5 to 0.8.10.
+  * Upstream build system no longer generates usr/lib/libelf.so.0.8
+    symlink. Removed from Debian build files.
+
+ -- Alex Pennace <alex@pennace.org>  Mon, 14 Apr 2008 20:31:52 -0400
+
+libelf (0.8.6-4) unstable; urgency=low
+
+  * Closes: #412878: warnings, cross-building and other minor build
+    fixes. Thanks, Guillem Jover
+
+ -- Alex Pennace <alex@pennace.org>  Wed,  1 Aug 2007 19:47:26 -0400
+
+libelf (0.8.6-3) unstable; urgency=low
+
+  * Fixed /usr/share/doc/libelfg0/copyright and
+    /usr/share/doc/libelfg0-dev/copyright to refer to the Free Software
+    Foundation's new address in Boston.
+
+ -- Alex Pennace <alex@pennace.org>  Mon,  3 Apr 2006 20:17:40 -0400
+
+libelf (0.8.6-2) unstable; urgency=low
+
+  * Added binary-arch and binary-indep to debian/rules. 0.8.6-1's revamp
+    of debian/rules did not include them.
+
+ -- Alex Pennace <alex@pennace.org>  Sat,  1 Apr 2006 18:55:05 -0500
+
+libelf (0.8.6-1) unstable; urgency=low
+
+  * New upstream release. (closes: #342587)
+  * Acknowledge NMU, thanks Joey Hess. (closes: #322772, #322789)
+  * Fixed debian/rules and lib/Makefile.in for cross-compiling support,
+    thanks Pjotr Kourzanov. (closes: #358770)
+  * Fixed de.po, thanks Jens Seidel. (closes: #313782)
+  * Rebuild libelf, thanks Steve Langasek. (closes: #321724)
+  * Switched to debhelper. Revamped debian/rules.
+  * No longer maintain /usr/doc/libelfg0 symlink.
+  * No longer maintain /usr/doc/libelfg0-dev symlink. libelfg0-dev.preinst
+    will remove /usr/doc/libelfg0-dev symlink if upgrading from 0.8.5-1.1
+    or earlier, as these versions did not properly clean up after
+    themselves in libelfg0-dev.prerm. This kludge will go away at some
+    point.
+  * Bumped up standards version to 3.6.2.2.
+
+ -- Alex Pennace <alex@pennace.org>  Fri, 31 Mar 2006 22:17:20 -0500
+
+libelf (0.8.5-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Applid patch from Julien Cristau to complete the /usr/doc transition.
+    Closes: #322772
+  * Fix bashism in debian/rules.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 10 Jan 2006 01:45:01 -0500
+
+libelf (0.8.5-1) unstable; urgency=low
+
+  * New upstream version. (closes: Bug#232900)
+  * Upstream version had older config.guess and config.sub. Keeping
+    config.guess and config.sub from libelf 0.8.2-1.1.
+  * Added build dependency on gettext. Catalogs moved from /usr/lib/locale
+    to /usr/share/locale, and from libelfg0-dev to libelfg0. 
+    (closes: Bug#186638)
+  * libelfg0-dev moved to libdevel.
+  * Acknowledge NMU, thanks Colin Watson. (closes: Bug#211240)
+  * Added conservative version dependency information to shlibs.
+    (closes: Bug#231044)
+  * Removed build dependency on debhelper.
+
+ -- Alex Pennace <alex@pennace.org>  Sat, 17 Apr 2004 22:30:53 -0400
+
+libelf (0.8.2-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * libelfg0-dev conflicts with libelf1-dev (closes: #211240).
+  * Update config.guess and config.sub from autotools-dev 20031007.1,
+    otherwise mips and mipsel will have problems building this.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri,  2 Jan 2004 15:01:55 +0000
+
+libelf (0.8.2-1) unstable; urgency=low
+
+  * New upsteam version.
+  * Applied Hurd build support patches from Debian 0.8.0-1.
+  * Added libelf-0.8.2-hash.patch and libelf-0.8.2-symver.patch, thanks
+    Jakub Jelinek and Jack Howarth. (closes: Bug#163272)
+  * Reorganized copyright file.
+
+ -- Alex Pennace <alex@pennace.org>  Sun,  6 Oct 2002 18:12:39 -0400
+
+libelf (0.8.0-1) unstable; urgency=low
+
+  * New upstream version. (closes: Bug#145833)
+  * Applied Hurd build support patches from Debian 0.7.0-9.
+  * The 64 bit fix added to Debian libelf 0.7.0-5 has been integrated
+    upstream for libelf 0.8.0.
+
+ -- Alex Pennace <alex@pennace.org>  Sun,  5 May 2002 16:04:35 -0400
+
+libelf (0.7.0-9) unstable; urgency=low
+
+  * Fixed libelfg0 prerm script to handle cases where /usr/doc is not a
+    directory full of links, thanks Ivan Vilata i Balaguer. (closes:
+    Bug#135413)
+
+ -- Alex Pennace <alex@pennace.org>  Sat,  2 Mar 2002 00:09:37 -0500
+
+libelf (0.7.0-8) unstable; urgency=low
+
+  * Fixed upsteam Makefiles to remove lib/stamp-h.
+  * Cleaned up postinst/postrm for libelfg0 so ldconfig is called
+    properly.
+  * Updated copyright.
+
+ -- Alex Pennace <alex@pennace.org>  Sun,  2 Dec 2001 01:46:55 -0500
+
+libelf (0.7.0-7) unstable; urgency=medium
+
+  * New config.guess and config.sub files to support Hurd. Basically fixes
+    what 0.7.0-6 was supposed to address, thanks Jeff Bailey and James
+    Morrison. (closes: Bug#115257, Bug#119037)
+
+ -- Alex Pennace <alex@pennace.org>  Wed, 21 Nov 2001 15:26:31 -0500
+
+libelf (0.7.0-6) unstable; urgency=low
+
+  * Building tweaks to allow hurd-i386 compilation, thanks Jeff
+    Bailey. (closes: Bug#115257)
+
+ -- Alex Pennace <alex@pennace.org>  Thu,  1 Nov 2001 20:42:56 -0500
+
+libelf (0.7.0-5) unstable; urgency=low
+
+  * Changed control file to place libelfg0 in libs.
+  * Dropped libc5 support.
+  * Fixed a 64 bit hiccup, thanks Jack Howarth and Jakub Jelinek.
+
+ -- Alex Pennace <alex@pennace.org>  Fri, 12 Oct 2001 22:48:57 -0400
+
+libelf (0.7.0-4) unstable; urgency=low
+
+  * New maintainer. (closes: Bug#91802)
+  * Added altgcc and libc5-altdev to i386 Build-Depends.
+  * clean target in debian/rules no longer touches debian/substvars. 
+
+ -- Alex Pennace <alex@pennace.org>  Wed, 18 Jul 2001 13:10:41 -0400
+
+libelf (0.7.0-3) unstable; urgency=low
+
+  * Updated config.sub. (Closes: Bug#92066, Bug#59049)
+
+ -- Enrique Zanardi <ezanard@debian.org>  Mon,  9 Apr 2001 10:30:16 +0100
+
+libelf (0.7.0-2) unstable; urgency=low
+
+  * Build libc5-compat packages on i386 only (Closes: Bug#27084, Bug#59050, Bug#90633)
+  * Moved documentation to /usr/share/doc (Closes: Bug#87830, Bug#91534, Bug#91544, Bug#91545, Bug#91548)
+
+ -- Enrique Zanardi <ezanard@debian.org>  Mon, 26 Mar 2001 09:09:17 +0100
+
+libelf (0.7.0-1) unstable; urgency=low
+
+  * New upstream version
+    
+ -- Enrique Zanardi <ezanard@debian.org>  Mon, 22 Mar 1999 20:45:26 +0000
+
+libelf (0.6.4-9) unstable; urgency=low
+
+  * libc5 compat packages are now built on i386 and m68k only. (Closes #27084)
+  * "lintian-clean". (Closes #19352).
+
+ -- Enrique Zanardi <ezanard@debian.org>  Fri, 20 Nov 1998 11:28:39 +0000
+
+libelf (0.6.4-8) unstable; urgency=low
+
+  * Modified debian/rules to use the right soname (Bug#12296)
+
+ -- Enrique Zanardi <ezanardi@molec1.dfis.ull.es>  Tue, 26 Aug 1997 15:37:21 +0100
+
+libelf (0.6.4-7) unstable; urgency=low
+
+  * Now builds shared libs for non-i386 ports. (Bug#12153)
+  * dpkg-buildpackage -B builds libc5-based packages also. (Bug#12153)
+
+ -- Enrique Zanardi <ezanardi@molec1.dfis.ull.es>  Tue, 19 Aug 1997 02:29:39 +0100
+
+libelf (0.6.4-6) unstable; urgency=low
+
+  * Rebuilt for libc6; now provides libelfg0{,-dev} and libelf0{,-altdev}.
+  * Rebuilt from pristine sources. 
+
+ -- Enrique Zanardi <ezanardi@molec1.dfis.ull.es>  Mon, 11 Aug 1997 19:02:02 +0100
+
+libelf0 (0.6.4-5) unstable; urgency=low
+
+  * New mantainer
+
+ -- Enrique Zanardi <ezanardi@molec1.dfis.ull.es>  Wed, 5 Mar 1997 01:25:20 +0000
+
+libelf0 (0.6.4-4) unstable; urgency=low
+
+  * compiled with -D_REENTRANT (for a more thread-safe library.)
+  * added a postinst to run ldconfig (gotta love conflicting information
+    from the programmer's manual :-)
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Mon, 3 Feb 1997 20:47:00 +1100
+
+libelf0 (0.6.4-3) unstable; urgency=low
+
+  * added dependancies for libc5/libc5-dev to libelf0/libelf0-dev (as per
+    David Engel's suggestion on debian-devel.)
+  * streamlined the build process somewhat.
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Wed, 18 Dec 1996 20:00:00 +1100
+
+libelf0 (0.6.4-2) unstable; urgency=low
+
+  * added Replaces/Conflicts to the control file for both packages.
+    (wasn't in revision 1 for some reason...hmm.)
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Wed, 6 Nov 1996 18:31:00 +1100
+
+libelf0 (0.6.4-1) unstable; urgency=low
+
+  * new source version
+  * modified rules to reflect the changes in the upstream Makefile.
+    (unfortunately, libelf needs to be compiled twice for the devel
+    and shared libs, so it gets built in the binary-* rules. Anybody
+    got any better ideas?)
+  * libelf-dev no longer replaces any header files from libc, so the
+    Replaces: field is removed. (doesn't seem to be in 0.5.2-3 for
+    some reason...hmm.)
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Wed, 30 Oct 1996 20:13:19 +1100
+
+libelf0 (0.5.2-3) unstable; urgency=low
+
+  * renamed package to libelf0 (0 being the soname)
+  * installed shlibs into debian/tmp-shared/DEBIAN/ - oops :-)
+  * corrected shlibs to reflect the package name change
+  * removed debian/control.{dev,shared} - finally figured out how multiple
+    binary packages are meant to come from a single source package.
+  * added Conflicts: and Replaces: libelf[-dev] to the appropriate section
+    of the control file. Also Provides: libelf[-dev] (though I doubt any
+    package actually uses libelf yet.)
+  * corrected the libelf0-dev dependancy on libelf0. (I'm surprised that
+    nobody picked up on this: it depended on - literally -
+    libelf (= Source-Version).)
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Sun, 27 Oct 1996 17:48:42 +1000
+
+libelf (0.5.2-2) unstable; urgency=low
+
+  * converted to the 2.1.1.0 source format
+  * stripped shared libraries (not development [static] libs, though.)
+  * reformatted the changelog
+  * added Replaces: libc5 to the libelf-dev package (it replaces a couple
+    of .h files from libc). _PLEASE_ contact me if this is incorrect; it
+    seems the right thing to do from the programmer's manual...
+  * added a shlibs file to the debian directory
+  * installed the Debian changelog.
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Sun, 22 Sep 1996 18:49:27 +1000
+
+libelf (0.5.2-1) unstable; urgency=low
+
+  * added the Debian system files
+
+ -- Stuart Lamble <lamble@yoyo.cc.monash.edu.au>  Sat, 24 Aug 1996 08:40:00 +1000
+
+
+

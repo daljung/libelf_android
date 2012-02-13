@@ -1,0 +1,12 @@
+#! /bin/sh
+#
+# Alex Pennace
+
+# Remove this kludge after etch+1.
+if [ "$1" = "remove" ]; then
+    if [ -L /usr/doc/libelfg0-dev ]; then
+	rm -f /usr/doc/libelfg0-dev
+    fi
+fi
+
+#DEBHELPER#

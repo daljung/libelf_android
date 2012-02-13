@@ -1,0 +1,14 @@
+#! /bin/sh
+#
+# Alex Pennace
+
+# Remove this kludge after etch+1.
+if [ "$1" = "configure" -a "$2" != "" ]; then
+    if dpkg --compare-versions "$2" le 0.8.5-1.1; then
+	if [ -L /usr/doc/libelfg0-dev ]; then
+	    rm -f /usr/doc/libelfg0-dev
+	fi
+    fi
+fi
+
+#DEBHELPER#
